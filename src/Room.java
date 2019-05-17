@@ -9,13 +9,17 @@ public class Room {
         this.klima = klima;
     }
 
-    int tempMinus(int temp) {
-        if (this.klima = true)
-            return this.temp - 1;
-        else if  (this.temp <= 14)
-            return 0;
-        else {
-            return 0;
+    boolean tempMinus() {
+        if (this.klima  && this.temp > 14) {
+            this.temp = this.temp - 1;
+            return true;
+        } else {
+            return false;
         }
     }
+
+    void showInfo(){
+        System.out.println(temp +" "+  metr +" "+ klima);
+    }
+
 }
